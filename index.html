@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grave, Sweet Grave | The heaveen</title>
+    <style>
+        /* PALETA DE CORES PERSONALIZADA
+           #0b090a : Fundo Principal (Preto profundo)
+           #161216 : Fundo Secundário (Roxo Sombrio)
+           #9d4edd : Cor de Destaque (Sweet / Roxo Neon)
+           #ffffff : Textos Principais
+           #9381ff : Textos Secundários / Detalhes
+        */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0b090a;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 20px 50px 20px;
+            background: linear-gradient(180deg, #161216 0%, #0b090a 100%);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #9d4edd;
+            margin-bottom: 10px;
+            text-shadow: 0 0 15px rgba(157, 78, 221, 0.4);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #9381ff;
+            font-style: italic;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 700px; /* Reduzido para centralizar e focar na tracklist */
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Seção do Spotify */
+        .spotify-section {
+            text-align: center;
+            margin-bottom: 50px;
+            background-color: #161216;
+            padding: 35px;
+            border-radius: 12px;
+            border: 1px solid #241c24;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .spotify-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .btn-spotify {
+            display: inline-block;
+            background-color: #1DB954; /* Verde oficial do Spotify */
+            color: #ffffff;
+            text-decoration: none;
+            padding: 15px 35px;
+            font-weight: bold;
+            border-radius: 50px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+            margin-top: 15px;
+            box-shadow: 0 0 10px rgba(29, 185, 84, 0.2);
+        }
+
+        .btn-spotify:hover {
+            background-color: #1ed760;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(29, 185, 84, 0.4);
+        }
+
+        /* Título da Tracklist */
+        .section-title {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 25px;
+            color: #9d4edd;
+            border-bottom: 1px solid #241c24;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Tracklist */
+        .tracklist {
+            list-style: none;
+            background-color: #110d11;
+            padding: 10px 25px;
+            border-radius: 12px;
+            border: 1px solid #1c151c;
+        }
+
+        .tracklist li {
+            padding: 16px 0;
+            border-bottom: 1px solid #1c151c;
+            display: flex;
+            align-items: center;
+            transition: padding-left 0.2s ease;
+        }
+
+        .tracklist li:last-child {
+            border-bottom: none;
+        }
+
+        .tracklist li:hover {
+            padding-left: 8px;
+            background: linear-gradient(90deg, rgba(157, 78, 221, 0.03) 0%, transparent 100%);
+        }
+
+        .track-number {
+            color: #9381ff;
+            font-weight: bold;
+            margin-right: 20px;
+            width: 25px;
+        }
+
+        .track-name {
+            font-weight: 500;
+            color: #e0e0e0;
+            transition: color 0.2s;
+        }
+
+        .tracklist li:hover .track-name {
+            color: #9d4edd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px 40px 20px;
+            margin-top: 60px;
+            color: #4a404a;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            border-top: 1px solid #161216;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Grave, Sweet Grave</h1>
+        <p>The heaveen</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- LINK DO SPOTIFY INTEGRADO -->
+        <section class="spotify-section">
+            <h2>Ouça o Álbum</h2>
+            <p style="color: #9381ff; margin-bottom: 15px;">Disponível agora na sua plataforma favorita.</p>
+            <a href="https://spotify.com" target="_blank" class="btn-spotify">Ouvir no Spotify</a>
+        </section>
+
+        <!-- TRACKLIST OFICIAL CENTRALIZADA -->
+        <section>
+            <h2 class="section-title">Tracklist</h2>
+            <ul class="tracklist">
+                <li><span class="track-number">01</span><span class="track-name">Ghostboy</span></li>
+                <li><span class="track-number">02</span><span class="track-number">Cemetery Of Pretend</span></li>
+                <li><span class="track-number">03</span><span class="track-name">Shovel</span></li>
+                <li><span class="track-number">04</span><span class="track-name">Together In Grave</span></li>
+                <li><span class="track-number">05</span><span class="track-name">Ashes Remains</span></li>
+                <li><span class="track-number">06</span><span class="track-name">Disappear</span></li>
+                <li><span class="track-number">07</span><span class="track-name">One Tomb</span></li>
+                <li><span class="track-number">08</span><span class="track-name">Fit In Coffin</span></li>
+                <li><span class="track-number">09</span><span class="track-name">Treasure Chest</span></li>
+                <li><span class="track-number">10</span><span class="track-name">Morbid</span></li>
+                <li><span class="track-number">11</span><span class="track-name">End to the Start</span></li>
+            </ul>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 The heaveen. Grave, Sweet Grave. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+                  </html>
+                  
